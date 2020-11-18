@@ -127,7 +127,31 @@ function ocultar(){
 	while ($fila1=mysqli_fetch_array($registros1)){	
 		$registros10=mysqli_query($conexion,"select * from subcategorias where id_categoria='$fila1[id]' order by nombre asc");
 	?>
+<<<<<<< HEAD
 		<li><a href="mostrarproductos.php?id_categoria=<?php echo $fila1['id']; ?>"><?php echo utf8_encode($fila1['categoria']);?></a></li>
+=======
+		<li><a href="mostrarproductos.php?id_categoria=<?php echo $fila1['id']; ?>"><?php echo utf8_encode($fila1['categoria']);?></a>
+		
+        <ul>
+			
+			<?php
+			/*
+			if(mysqli_num_rows($registros10)!=0){
+				while ($fila10=mysqli_fetch_array($registros10)){	
+			?>
+			
+			<li><a href="mostrarproductos.php?id_categoria=<?php echo $fila1['id']; ?>&id_subcategoria=<?php echo $fila10['id_subcategoria']; ?>"><?php echo utf8_encode($fila10['nombre']);?></a></li>
+			
+            <?php 
+				}
+			}
+			*/
+			?>
+			
+			</ul>
+		
+        </li>
+>>>>>>> 34ff00b606e9ae9033cc626550ceda4c40da4350
     <?php
 	}
 	?>

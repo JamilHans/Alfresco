@@ -35,7 +35,44 @@ function comprobar_stock(cantidad){
 		
 }
 
+<<<<<<< HEAD
 function aviso_stock(id_producto){	
+=======
+function aviso_stock(id_producto){
+	
+	// alert("hola");
+	// variable email,id_producto contiene el email e id_producto.
+	/*
+	
+	swal({
+  title: 'Submit email to run ajax request',
+  input: 'email',
+  showCancelButton: true,
+  confirmButtonText: 'Submit',
+  showLoaderOnConfirm: true,
+  preConfirm: function (email) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(function() {
+        if (email === 'taken@example.com') {
+          reject('This email is already taken.')
+        } else {
+          resolve()
+        }
+      }, 2000)
+    })
+  },
+  allowOutsideClick: false
+}).then(function (email) {
+  swal({
+    type: 'success',
+    title: 'Ajax request finished!',
+    html: 'Submitted email: ' + email
+  })
+})
+	
+	*/
+	
+>>>>>>> 34ff00b606e9ae9033cc626550ceda4c40da4350
 	swal({
   		title: 'Introduce tu email',
   		input: 'email',

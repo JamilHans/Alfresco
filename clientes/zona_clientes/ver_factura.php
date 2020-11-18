@@ -101,6 +101,7 @@ if(isset($_SESSION["id_cliente"]) && isset($_GET["pedido"])){
 	$pdf->SetFont("Times","",11);
 	$pdf->Cell(450,20,"",0,1,"R");
 	$pdf->Cell(450,20,"Subtotal:",0,0,"R");
+<<<<<<< HEAD
 	$pdf->Cell(80,20,$fila2["total_pedido"]." E",0,1,"L");
 	
 	$pdf->Cell(450,20,"I.V.A. 21%:",0,0,"R");
@@ -108,6 +109,15 @@ if(isset($_SESSION["id_cliente"]) && isset($_GET["pedido"])){
 	
 	$pdf->Cell(450,20,"TOTAL:",0,0,"R");
 	$pdf->Cell(80,20,round((($fila2["total_pedido"])+($fila2["total_pedido"]*21)/(100))*100)/(100)." E",0,0,"L");
+=======
+	$pdf->Cell(80,20,$fila2["total_pedido"]." Soles",0,1,"L");
+	
+	$pdf->Cell(450,20,"I.V.A. 21%:",0,0,"R");
+	$pdf->Cell(80,20,round((($fila2["total_pedido"]*21)/(100))*100)/(100)." Soles",0,1,"L");
+	
+	$pdf->Cell(450,20,"TOTAL:",0,0,"R");
+	$pdf->Cell(80,20,round((($fila2["total_pedido"])+($fila2["total_pedido"]*21)/(100))*100)/(100)." Soles",0,0,"L");
+>>>>>>> 34ff00b606e9ae9033cc626550ceda4c40da4350
 	
 	$pdf->SetXY(30,773);
 	$pdf->SetFont("Times","U",12);
