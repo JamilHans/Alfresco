@@ -60,18 +60,9 @@ function eliminar(id){
 	<ul>
 		<li><a href="../productos/formaniadirproductos.php">Añadir Producto </a></li>
 	</ul></li>
-	<li class="topmenu"><a class="pressed" href="#" style="width:180px;height:55px;line-height:55px;"><span style="margin-top:-15px"><span style="margin-top:-15px">Categorias</span></a>
-	<!--
-    <ul>
-		<li><a href="../subcategorias/form_aniadir_subcategorias.php">Sub Categorias</a></li>
-	</ul>
-	-->
-    </li>
+	<li class="topmenu"><a class="pressed" href="#" style="width:180px;height:55px;line-height:55px;"><span style="margin-top:-15px"><span style="margin-top:-15px">Categorias</span></a></li>
 	<li class="topmenu"><a href="../clientes/" style="width:157px;height:55px;line-height:55px;"><span style="margin-top:-15px">Clientes</span></a></li>
-	<!--
-	<li class="topmenu"><a href="../chat" style="width:158px;height:55px;line-height:55px;"><span style="margin-top:-15px">Chat</span></a></li>
-    <li class="topmenu"><a href="../comentarios/mostrar_comentarios.php" style="width:190px;height:55px;line-height:55px;"><span style="margin-top:-15px">Comentarios</span></a></li>
-	-->
+	
 </ul>
 <!-- End css3menu.com BODY section -->
 </div>
